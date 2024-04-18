@@ -1,0 +1,95 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(200, 235, 242); /* Ensure this is one of the specified colors if needed */
+    color: rgb(255,255,255); /* Use white for text to ensure readability */
+   }
+   
+   .top-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
+   }
+   
+   .bar-icon {
+    background-color: rgb(165, 226, 230);
+    color: black; /* Use white for text to ensure readability */
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+   }
+   
+   .bar-icon:hover {
+    background-color: rgb(33, 119, 125); /* Change background color on hover */
+   }
+   
+   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   }
+   
+   .action-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 164, 175)
+    ; /* Use specified color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+   }
+   
+   
+   .action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   .generate-gate-pass, .generate-leave {
+    background-color: rgb(24, 131, 138); 
+    color: rgb(255,255,255); 
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+   }
+   
+   .generate-gate-pass:hover, .generate-leave:hover {
+    background-color: rgb(14, 60, 64); 
+   }
+   
+   @media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .action-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bar-icon {
+        padding: 8px;
+    }
+    .action-box {
+        width: 90%; 
+    }
+}
+
+   
