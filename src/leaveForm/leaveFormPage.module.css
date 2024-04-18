@@ -1,0 +1,80 @@
+/* LeaveForm.module.css */
+body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Set a background color */
+  overflow-y: scroll; /* Always show scrollbar */
+  background-image: url("/public/images.jpeg");
+}
+.leaveFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.leaveForm {
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  background-color: rgb(175, 221, 229);
+  color: black; /* Black text color */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leaveForm h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF; /* White border */
+  box-sizing: border-box; 
+}
+
+textarea {
+  height: 100px;
+}
+.programme{
+  padding: 10px;
+  width: 100%;
+}
+
+
+button {
+  background-color: rgb(15, 164, 175); /* Light blue button color */
+  color: #FFFFFF; /* White text color */
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(150, 71, 52); /* Darker orange on hover */
+}
+
+.error {
+  border: 2px solid red;
+}
