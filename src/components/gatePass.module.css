@@ -1,0 +1,128 @@
+/* Overall form container */
+body{
+  background-color: rgb(255, 251, 251);
+}
+.exit-details-form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+  border: 4px solid #ddd;
+  border-radius: 7px;
+  background-color: rgb(114, 208, 224);
+  max-width: 800px;
+  border: 3px solid rgb(0, 49, 53);
+}
+
+/* Heading section */
+.exit-details-form1 .heading {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 0 20px;
+  background-color: rgb(15, 164, 175);
+}
+
+/* Heading text */
+.exit-details-form1 h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(2, 39, 43);
+}
+
+
+/* Individual form groups */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form group labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input elements, textareas, and selects */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(150, 71, 52);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #ddd;
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea height */
+.form-group textarea {
+  height: 100px;
+}
+.form-group input{
+  padding: 12px;
+}
+
+/* Submit button */
+.submitButton {
+  background-color: rgb(15, 164, 175);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: rgb(17, 190, 60);
+}
+
+/* Layout for two parts of the form */
+.detailPart {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formDiv{
+  display: flex;
+}
+.section1{
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+.section2{
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .exit-details-form1 .heading {
+    padding: 0 10px;
+  }
+  
+  .detailPart {
+    flex-direction: column;
+  }
+  
+  .formDiv {
+    width: 100%;
+  }
+  
+  .section1,
+  .section2 {
+    width: 100%;
+  }
+}
